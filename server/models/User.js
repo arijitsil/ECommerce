@@ -5,7 +5,6 @@ const User = sequelize.define('users', {
     username:  {
         type     : Sequelize.STRING,
         allowNull: false,
-
     },
     pass: {
         type: Sequelize.STRING,

@@ -26,6 +26,10 @@ const Order = sequelize.define('order', {
     order_status : {
         type : Sequelize.STRING,
         allowNull : false
+    },
+    read_flag : {
+        type : Sequelize.STRING,
+        allowNull : false
     }
 });
 

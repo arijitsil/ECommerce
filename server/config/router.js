@@ -28,32 +28,32 @@ module.exports.set = (app) => {
 	 app.post('/api/user', authMiddleware.checkAuth,userController.editUser);
 	app.get('/api/user/',authMiddleware.checkAuth, userController.getAllUsers);
 	
-	 // GET STORES LIST
-	 app.get('/api/stores',storeController.getStoresList); // Get All Stores List
+	//  // GET STORES LIST
+	//  app.get('/api/stores',storeController.getStoresList); // Get All Stores List
 
-	  // ALL MENU CATEGORY OPERATIONS
-	  app.get('/api/menuCategory',authMiddleware.checkAuth, menuCategoryController.getAllStore); // THIS IS FOR SHOWING ALL MENU FOR USER TO CHOOSE
-	  app.post('/api/menuCategory',authMiddleware.checkAuth,upload.single('image'),menuCategoryController.createMenu);  // THIS IS FOR CREATING MENU
-	  app.put('/api/menuCategory',authMiddleware.checkAuth,menuCategoryController.editMenu); // THIS IS FOR EDITING MENU NAME
+	//   // ALL MENU CATEGORY OPERATIONS
+	//   app.get('/api/menuCategory',authMiddleware.checkAuth, menuCategoryController.getAllStore); // THIS IS FOR SHOWING ALL MENU FOR USER TO CHOOSE
+	//   app.post('/api/menuCategory',authMiddleware.checkAuth,upload.single('image'),menuCategoryController.createMenu);  // THIS IS FOR CREATING MENU
+	//   app.put('/api/menuCategory',authMiddleware.checkAuth,menuCategoryController.editMenu); // THIS IS FOR EDITING MENU NAME
 
-	  // ALL MENU ITEM OPERATION
-	  app.post('/api/menuitem',authMiddleware.checkAuth, menuItemController.addMenuItem);
-	  app.get('/api/menuitem',authMiddleware.checkAuth, menuItemController.getMenuItem);
-	  app.put('/api/menuitem', authMiddleware.checkAuth, menuItemController.editMenuItem);
+	//   // ALL MENU ITEM OPERATION
+	//   app.post('/api/menuitem',authMiddleware.checkAuth, menuItemController.addMenuItem);
+	//   app.get('/api/menuitem',authMiddleware.checkAuth, menuItemController.getMenuItem);
+	//   app.put('/api/menuitem', authMiddleware.checkAuth, menuItemController.editMenuItem);
 
-	 // GET MENU AND MENUITEM BASED ON STORE
-	 app.get('/api/stores/menu/',authMiddleware.checkAuth,menuController.getMeneFromStore); // Get Store Related Menu By Using Store Id
-	 app.post('/api/stores/menu/',authMiddleware.checkAuth, menuController.addRemoveMenuToStore); // Add MENU TO Store By Using Store Id
-	 //app.put('/api/stores/menu/',menuController.toggleAvailability); // Change Availability of Menu in a Store
+	//  // GET MENU AND MENUITEM BASED ON STORE
+	//  app.get('/api/stores/menu/',authMiddleware.checkAuth,menuController.getMeneFromStore); // Get Store Related Menu By Using Store Id
+	//  app.post('/api/stores/menu/',authMiddleware.checkAuth, menuController.addRemoveMenuToStore); // Add MENU TO Store By Using Store Id
+	//  //app.put('/api/stores/menu/',menuController.toggleAvailability); // Change Availability of Menu in a Store
 	
-	 // UPDATE STORE MENUITEM
-	 app.post('/api/storeMenuItem',authMiddleware.checkAuth, storeMenuItemController.addRemoveMenuItem);
+	//  // UPDATE STORE MENUITEM
+	//  app.post('/api/storeMenuItem',authMiddleware.checkAuth, storeMenuItemController.addRemoveMenuItem);
 
 
-	 // GETORDERS
+	//  // GETORDERS
 
-	 app.get('/api/orders',authMiddleware.checkAuth, orderController.getOrders);
-	 app.post('/api/orders', authMiddleware.checkAuth,orderController.createOrders);
+	//  app.get('/api/orders',authMiddleware.checkAuth, orderController.getOrders);
+	//  app.post('/api/orders', authMiddleware.checkAuth,orderController.createOrders);
 	
 
 	

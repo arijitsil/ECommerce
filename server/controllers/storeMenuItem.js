@@ -1,12 +1,12 @@
-const storeMenuItemService = require('../services/storeMenuItem')
+// const storeMenuItemService = require('../services/storeMenuItem')
 
-function getStoresList(req,res){
-    storeMenuItemService.getStoresList(req).
-    then(data =>{
-        res.send(data);
-    });
-}
+// function getStoresList(req,res){
+//     storeMenuItemService.getStoresList(req).
+//     then(data =>{
+//         res.send(data);
+//     });
+// }
 
-module.exports = {
-    getStoresList
-}
+// module.exports = {
+//     getStoresList
+//}

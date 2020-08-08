@@ -6,9 +6,9 @@ var sequelize = new Sequelize(config.databaseName, config.db_userName, config.db
     host: config.db_host,
     port: config.db_port,
     dialect: 'postgres',
-    dialectOptions : {
-      ssl : true
-    }
+    // dialectOptions : {
+    //   ssl : true
+    // }
   });
 
 

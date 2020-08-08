@@ -18,6 +18,19 @@ const Store = sequelize.define('store', {
         type: Sequelize.BIGINT,
         autoIncrement :true,
         primaryKey:true
+    },
+    store_start_time : {
+        type : Sequelize.TIME,
+        allowNull : false
+    },
+
+    store_end_time : {
+        type : Sequelize.TIME,
+        allowNull : false
+    },
+    store_image : {
+        type : Sequelize.STRING,
+        
     }
 });
 

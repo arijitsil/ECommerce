@@ -31,7 +31,7 @@ const Customer = sequelize.define('customers', {
     phoneNumber :{
        type: Sequelize.STRING,
     },
-
+   
     socialId : {type: Sequelize.STRING},
 
     socialType : {type: Sequelize.INTEGER},  // 1- facebook, 2- google
